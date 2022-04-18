@@ -1,0 +1,1 @@
+xjava.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "this.message" is null
