@@ -3,6 +3,7 @@ package com.moodanalyser;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertSame;
 
 public class MoodAnalyseTest {
     @Test
@@ -22,6 +23,16 @@ public class MoodAnalyseTest {
         MoodAnalyser moodAnalyser = new MoodAnalyser(null);
         String mood = moodAnalyser.analyseMood();
         assertEquals(mood, "HAPPY");
+    }
+    @Test
+    public void WhenGivenNullMessageShouldThrowMoodAnalysisException() {
+        try{
+        MoodAnalyser moodAnalyser = new MoodAnalyser(null);
+        String mood = moodAnalyser.analyseMood();
+        }
+        catch(MoodAnalysisException e){
+            assertSame(MoodAnalysisException.ExceptionType.NULL,e.exceptionType);
+        }
     }
 
 
