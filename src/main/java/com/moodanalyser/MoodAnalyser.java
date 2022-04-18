@@ -12,10 +12,9 @@ public class MoodAnalyser {
             if (this.message.contains("Sad"))
                 return "SAD";
             return "HAPPY";
+        } catch (NullPointerException e) {
+            return "HAPPY";
         }
-        catch(NullPointerException e){
-            System.out.println(e);
-        }
-        return "Please enter valid message";
+
     }
 }
