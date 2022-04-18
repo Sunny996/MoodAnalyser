@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.moodanalyser.MoodAnalyseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-18T11:37:25" hostname="DESKTOP-E72B5JU" time="0.033">
+<testsuite name="com.moodanalyser.MoodAnalyseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-04-18T11:40:28" hostname="DESKTOP-E72B5JU" time="0.03">
   <properties/>
-  <testcase name="WhenGivenASadMessageShouldReturnSad()" classname="com.moodanalyser.MoodAnalyseTest" time="0.033"/>
+  <testcase name="WhenGivenASadMessageShouldReturnSad()" classname="com.moodanalyser.MoodAnalyseTest" time="0.027"/>
+  <testcase name="WhenGivenAnyMessageShouldReturnSad()" classname="com.moodanalyser.MoodAnalyseTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
